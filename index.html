@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-slide active" id="quiz1">
+            <h2>Which Property is used to specify the space between letter </h2>
+            <button class="answer ans1" onclick="checkAnswer(this, 'wrong', 1)">Font Spacing</button>
+            <button class="answer ans2" onclick="checkAnswer(this, 'wrong', 1)">Letter Gap</button>
+            <button class="answer ans3" onclick="checkAnswer(this, 'wrong', 1)">Text Spacing</button>
+            <button class="answer ans4" onclick="checkAnswer(this, 'correct', 1)">Letter Spacing</button>
+        </div>
+        <div class="quiz-slide" id="quiz2">
+            <h2>What does the float property do in CSS?</h2>
+            <button class="answer ans1" onclick="checkAnswer(this, 'correct', 2)">Left to right of container</button>
+            <button class="answer ans2" onclick="checkAnswer(this, 'wrong', 2)">It fix the element in a particular position</button>
+            <button class="answer ans3" onclick="checkAnswer(this, 'wrong', 2)">It makes the element scroll </button>
+            <button class="answer ans4" onclick="checkAnswer(this, 'wrong', 2)">It changes the element opacity</button>
+        </div>
+        <div class="quiz-slide" id="quiz3">
+            <h2>How do you make a list that lists its item with square?</h2>
+            <button class="answer ans1" onclick="checkAnswer(this, 'wrong', 3)">Square</button>
+            <button class="answer ans2" onclick="checkAnswer(this, 'wrong', 3)">Circle</button>
+            <button class="answer ans3" onclick="checkAnswer(this, 'correct', 3)">list style type square</button>
+            <button class="answer ans4" onclick="checkAnswer(this, 'wrong', 3)">box shape</button>
+        </div>
+        <div class="quiz-slide" id="quiz4">
+            <h2>Which Property is used for Strict Equality Operator?</h2>
+            <button class="answer ans1" onclick="checkAnswer(this, 'correct', 4)"> === </button>
+            <button class="answer ans2" onclick="checkAnswer(this, 'wrong', 4)"> == </button>
+            <button class="answer ans3" onclick="checkAnswer(this, 'wrong', 4)"> += </button>
+            <button class="answer ans4" onclick="checkAnswer(this, 'wrong', 4)"> =+</button>
+        </div>
+        <div class="quiz-slide" id="quiz5">
+            <h2>console.log(0.1+0.1==0.3);</h2>
+            <button class="answer ans1" onclick="checkAnswer(this, 'wrong', 5)">true </button>
+            <button class="answer ans2" onclick="checkAnswer(this, 'correct', 5)">false</button>
+            <button class="answer ans3" onclick="checkAnswer(this, 'wrong', 5)">undefined</button>
+            <button class="answer ans4" onclick="checkAnswer(this, 'wrong', 5)">syntax error</button>
+        </div>
+        <button class="next" onclick="goToNextQuestion()">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
